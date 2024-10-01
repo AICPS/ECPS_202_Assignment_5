@@ -40,17 +40,17 @@ function install_py_deps {
 function install_all_libs {
         echo ""
     echo "[MATIEC COMPILER]"
-    cd utils/matiec_src
+    cd matiec
     autoreconf -i
     ./configure
     make
-    cp ./iec2c ../../webserver/
+    cp ./iec2c ../webserver/
     if [ $? -ne 0 ]; then
         echo "Error compiling MatIEC"
         echo "OpenPLC was NOT installed!"
         exit 1
     fi
-    cd ../..
+    cd ..
 
     echo ""
     echo "[ST OPTIMIZER]"
