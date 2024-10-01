@@ -10,16 +10,13 @@
 #include "POUS.h"
 
 // CONFIGURATION CONFIG0
-__DECLARE_GLOBAL(INT,CONFIG0,PLC_TICKS_PER_SEC)
-__DECLARE_GLOBAL(DINT,CONFIG0,PLC_SYS_TICK_CNT)
 
 void RES0_init__(void);
 
 void config_init__(void) {
   BOOL retain;
   retain = 0;
-  __INIT_GLOBAL(INT,PLC_TICKS_PER_SEC,__INITIAL_VALUE(0),retain)
-  __INIT_GLOBAL(DINT,PLC_SYS_TICK_CNT,__INITIAL_VALUE(0),retain)
+  
   RES0_init__();
 }
 
@@ -28,5 +25,5 @@ void RES0_run__(unsigned long tick);
 void config_run__(unsigned long tick) {
   RES0_run__(tick);
 }
-unsigned long long common_ticktime__ = 20000000ULL; /*ns*/
-unsigned long greatest_tick_count__ = 0UL; /*tick*/
+unsigned long long common_ticktime__ = 20000000ULL * 1ULL; /*ns*/
+unsigned long greatest_tick_count__ = (unsigned long)0UL; /*tick*/
