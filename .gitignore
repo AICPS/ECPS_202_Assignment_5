@@ -20,5 +20,3 @@ Makefile
 config.*
 *.a
 .deps
-utils/dnp3_src/*.ii
-utils/dnp3_src/*.s
