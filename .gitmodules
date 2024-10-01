@@ -1,0 +1,6 @@
+[submodule "openplc"]
+	path = openplc
+	url = https://github.com/thiagoralves/OpenPLC_v3.git
+[submodule "matiec"]
+	path = matiec
+	url = https://github.com/beremiz/matiec.git
