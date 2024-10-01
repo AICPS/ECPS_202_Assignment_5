@@ -15,3 +15,8 @@ CMakeSettings.json
 webserver/bin
 webserver/build
 obj/
+
+Makefile
+config.*
+*.a
+.deps
