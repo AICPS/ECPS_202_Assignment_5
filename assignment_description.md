@@ -18,7 +18,7 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
      ```
      Here is an example working code:
      ```
-     Followed immediately by the complete working example code exactly as found in the ENERGY.ST file.
+     Followed immediately by the complete working example code exactly as found in the [ENERGY.ST](st_files/ENERGY.ST) file.
    - **Stop Condition:** If the compiler output looks like this, that means your code is compiling with no problem, and you can submit the generated code.
         ```
         Generating C files...
