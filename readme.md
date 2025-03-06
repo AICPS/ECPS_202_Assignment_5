@@ -1,9 +1,10 @@
 
+### Clone the following repository
+```
+git clone git@github.com:Emegua/individual_project_5.git
+```
 ### Init submodules
 ```
-git submodule add https://github.com/thiagoralves/OpenPLC_v3.git openplc
-git submodule add https://github.com/beremiz/matiec.git matiec
-
 git submodule update --init --recursive
 ```
 
