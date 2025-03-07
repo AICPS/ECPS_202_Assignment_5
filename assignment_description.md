@@ -14,6 +14,10 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
    - **Iteration Requirement:** You must refine your prompt iteratively.
      - **Fallback Trigger:** If, after **7 iterations**, no valid solution is produced, your input to the model should include a working example.
      - **Iteration Cap:** Do not exceed **15 iterations**.
+     - In each iteration, add the following sentence in your prompt.
+       ```
+       Don't get frustrated. Only output the code and nothing else.
+       ```
    - **Fallback Requirement:** If you reach the fallback condition, your input to the model should include, in addition to the compiler output, the following fallback message:
      ```
      Here is an example working code:
