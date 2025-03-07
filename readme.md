@@ -16,6 +16,7 @@ NB: It may require sudoers permission
 ```
 cd openplc
 ./install.sh linux
+cd ../
 ```
 
 
