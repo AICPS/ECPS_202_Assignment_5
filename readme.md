@@ -1,9 +1,10 @@
 
-**Requirements:** This guide assumes you are using a Linux platform or Windows Subsystem for Linux (WSL).
+**Requirements:** This guide assumes you are using a Linux platform or Windows Subsystem for Linux (WSL). Either wise, please setup a linux VM (Ubuntu 24.04 LTS should be enough) for the assignment.
 
-### Clone the following repository
+### Clone the following repository and change your directory to the assignment folder
 ```
 git clone git@github.com:AICPS/ECPS_202_Assignment_5.git
+cd ECPS_202_Assignment_5
 ```
 ### Init submodules
 ```
