@@ -41,14 +41,15 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
    - For fairness, all students must use the **Gemini2.0 Flash**. This is a strict requirment!
 
 3. **Submission Requirements:**
-   - **Compiler Screenshots:** Submit screenshots of the MatIEC compiler output for each iteration.
-   - **Chat History:** Create a publicly shareable link for the complete chat history with Gemini that documents your prompt refinement process. For a guide on how to create a shareable link check: [Share a chat](https://support.google.com/gemini/answer/13743730?).
+   - A single PDF file with the follwoing information:
+      - **Chat History:** Create a publicly shareable link for the complete chat history with Gemini that documents your prompt refinement process. For a guide on how to create a shareable link check: [Share a chat](https://support.google.com/gemini/answer/13743730?).
+      - **Compiler Screenshots:** screenshots of the MatIEC compiler output for each iteration.
    - The final generated PLC code.
 
-4. **Compiler Setup:**
+5. **Compiler Setup:**
    - For instructions on how to set up the compiler environment and compile the generated code, please check the `readme.md` file.
 
-5. **Grading:**
+6. **Grading:**
    - Grading will be based on how well you follow the guidelines outlined in this assignment description. As long as you adhere to the guidelines, it is acceptable even if the final code after 15 iterations is not compilable. However, if you do not follow the guidelines, points will be deducted.
 
 ## PLC Programming Specification: Temperature Controller
