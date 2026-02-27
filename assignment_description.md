@@ -11,7 +11,7 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
 ## Assignment Requirements
 
 1. **Iteration Limits and Fallback:**
-   - **Iteration Requirement:** You must refine your prompt iteratively.
+   - **Iteration Requirement:** You must refine your prompt iteratively. If the generated program is unable to compile, refine your prompt with the compilation errors.
      - **Fallback Trigger:** If, after **7 iterations**, no valid solution is produced, your input to the model should include a working example.
      - **Iteration Cap:** Do not exceed **15 iterations**.
      - In each iteration, add the following sentence in your prompt.
@@ -56,6 +56,15 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
 6. **Grading:**
    - Grading will be based on how well you follow the guidelines outlined in this assignment description. As long as you adhere to the guidelines, it is acceptable even if the final code after 15 iterations is not compilable. However, if you do not follow the guidelines, points will be deducted.
 
+## Initial Prompt for the Language Model
+
+When interacting with the language model, use the following initial prompt:
+
+> **Prompt:**  
+> "Based on the following PLC programming specification for a Temperature Controller, generate Structured Text (ST) code that implements this specification. Include a function block for the temperature control logic, a program that instantiates and calls this function block, and a configuration block. **Only output the code and nothing else.**"
+
+After the above prompt, include the program specification below
+
 ## PLC Programming Specification: Temperature Controller
 
 ### System Overview
@@ -94,14 +103,7 @@ The Temperature Controller is designed to regulate a heating element in order to
 - **Debounce Mechanism:** Implement debounce logic for the system enable/disable signal to avoid false triggering.
 - **Hysteresis:** Use a hysteresis margin (e.g., 1.0°C) to prevent rapid toggling near the setpoint.
 
-## Initial Prompt for the Language Model
 
-When interacting with the language model, use the following initial prompt:
-
-> **Prompt:**  
-> "Based on the following PLC programming specification for a Temperature Controller, generate Structured Text (ST) code that implements this specification. Include a function block for the temperature control logic, a program that instantiates and calls this function block, and a configuration block. **Only output the code and nothing else.**"
-
-After the above prompt, include the program specification written above [PLC Programming Specification: Temperature Controller](#plc-programming-specification-temperature-controller)
 
 ---
 
