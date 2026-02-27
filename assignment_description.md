@@ -42,7 +42,7 @@ In this assignment, you will generate Structured Text (ST) code for a Temperatur
         ```
 
 2. **Tool Requirement:**
-   - For fairness, all students must use the **Gemini2.0 Flash**. This is a strict requirment!
+   - For fairness, all students must use the **Gemini3.0 Fast**. This is a strict requirment!
 
 3. **Submission Requirements:**
    - A single PDF file with the follwoing information:
